@@ -1,63 +1,65 @@
 body {
-  background: url('../images/shinystuff1.jpg');
-  background-attachment:fixed;
-  background-position:center; 
+    background: url('../images/shinystuff1.jpg');
+    background-attachment: fixed;
+    background-position: center;
 }
 
- body, html{ 
-color:#330033; 
-text-align:center;
+body, html {
+    text-align: center;
 }
 
 [draggable] {
-user-select: none;
+    user-select: none;
 }
 
 ul.photos {
-  list-style: none;
-  font-size: 0px;
-  margin-left: -5%;
- margin-top: 2.5%;
+    list-style: none;
+    font-size: 0px;
+    margin-left: -5%;
+    margin-top: 2.5%;
 }
 
 ul.photos li {
-  display: inline-block;
-  padding: 10px;
-  margin: 0 0 2.5% 1.5%;
-  position: relative;
-  background: #fff;
-  border: 90px solid #ddd;
-  vertical-align: top;
-  box-shadow: 0 0 15px #ddd;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 2.5% 1.5%;
+    position: relative;
+    background: #fff;
+    border: 90px solid #ddd;
+    vertical-align: top;
+    box-shadow: 0 0 15px #ddd;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 ul.photos li img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 0 10px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
 }
 
 ul.photos.columns-3 li {
-  width: 30.83%; 
-  margin: -2.5;
+    width: 30.83%;
+    margin: -2.5;
 }
 
 @media (max-width: 480px) {
-  ul.grid-nav li {
-    display: block;
-    margin: 0 0 5px;
-  }
-  ul.grid-nav li a {
-    display: block;
-  }
-  ul.photos {
-    margin-left: 0;
-  }
-  ul.photos li {
-    width: 100% !important; /* over-ride all li styles */
-    margin: 0 0 20px;
-  }
+    ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    ul.grid-nav li a {
+        display: block;
+    }
+
+    ul.photos {
+        margin-left: 0;
+    }
+
+    ul.photos li {
+        width: 100% !important;
+        margin: 0 0 20px;
+    }
 }
    
