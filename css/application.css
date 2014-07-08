@@ -14,8 +14,21 @@ text-align:center;
 user-select: none;
 }
 
-ul.phots {
+ul.photos {
   list-style: none;
   font-size: 0px;
+}
+
+ul.photos li {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
    
