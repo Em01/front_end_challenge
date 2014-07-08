@@ -1,7 +1,7 @@
 body {
   background: url('../images/shinystuff1.jpg');
   background-attachment:fixed;
-background-position:center; 
+  background-position:center; 
 }
 
  body, html{ 
@@ -16,9 +16,8 @@ user-select: none;
 ul.photos {
   list-style: none;
   font-size: 0px;
-  margin-left: -5%;
+  margin-left: -2.5%;
  margin-top: 2.5%;
- text-align: center;
 }
 
 ul.photos li {
@@ -26,11 +25,9 @@ ul.photos li {
   padding: 10px;
   margin: 0 0 2.5% 2.5%;
   background: #fff;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  font-size: 1rem;
+  border: 100px solid #ddd;
   vertical-align: top;
-  box-shadow: 0 0 5px #ddd;
+  box-shadow: 0 0 15px #ddd;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
