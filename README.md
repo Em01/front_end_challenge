@@ -1,7 +1,8 @@
 #Front End Assignment
 
 ![](ss1.png?raw=true)
-
+![](ss2.png?raw=true)
+![](ss3.png?raw=true)
 
 This assignment was done as a techinal test for a front end role. The instructions i was given are as follows:
 
