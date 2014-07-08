@@ -1,11 +1,10 @@
 body {
-  background: url('images/giftly.png');
-  margin:0;
-  padding:0;
+  background: url('../images/shinystuff1.jpg');
+  background-attachment:fixed;
+background-position:center; 
 }
 
- body, html{
-font-family:sans-serif; 
+ body, html{ 
 color:#330033; 
 text-align:center;
 }
@@ -17,7 +16,9 @@ user-select: none;
 ul.photos {
   list-style: none;
   font-size: 0px;
-  margin-left: -2.5%;
+  margin-left: -5%;
+ margin-top: 2.5%;
+ text-align: center;
 }
 
 ul.photos li {
