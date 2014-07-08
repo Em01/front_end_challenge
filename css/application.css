@@ -1,0 +1,36 @@
+body {
+  background: url('images/giftly.png');
+  margin:0;
+  padding:0;
+}
+
+ body, html{
+font-family:sans-serif; 
+color:#330033; 
+text-align:center;
+}
+
+[draggable] {
+user-select: none;
+}
+
+ul {
+   font-size: 0;
+  width: 22px;
+margin:auto;
+width:20%;
+text-align:center;*/
+}
+#photos{
+  display: inline: center;
+}
+li {
+  font-size: 0;
+  width: 225px;
+  margin: 0 auto;
+list-style-type:square;
+padding:12px;
+margin:2px;
+background-color:#FFFFFF;
+border:2px double #CCCCCC;
+}
