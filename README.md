@@ -12,6 +12,9 @@ While the use of libraries is permitted for basic DOM manipulation or event hand
 Code should be optimised for Chrome. Support for other browsers is not necessary.
 Extra points for style.
 
+##About
+If i were to spend further time on this project i would spend more time looking at the Javascript. At the moment I can only drag and drop the pictures if they are dragged from the border of the image not the image itself. I also encountered a similar issue if the picture is dropped on the picture itself as opposed to the pictures border.  
+
 ##Technologies Used
 - Sublime Text
 - Git
