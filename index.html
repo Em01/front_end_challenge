@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html>
-<link href="css/application.css" rel="stylesheet" type="text/css">
+
 <head>
+    <link href="css/application.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var source;
 
-<script type="text/javascript">
-var source;
-function dragStarted(evt){
-//start drag
-source=evt.target;
-//set data
-evt.dataTransfer.setData("image/jpeg", evt.target.innerHTML);
-//specify allowed transfer
-evt.dataTransfer.effectAllowed = "move";
-}
+        function dragStarted(evt) {
+            source = evt.target;
+            evt.dataTransfer.setData("image/jpeg", evt.target.innerHTML);
+            evt.dataTransfer.effectAllowed = "move";
+        }
 
+        function draggingOver(evt) {
+            evt.preventDefault();
+            evt.dataTransfer.dropEffect = "move";
+        }
 
-
-function draggingOver(evt){
-//drag over
-evt.preventDefault();
-//specify operation
-evt.dataTransfer.dropEffect = "move";
-}
-
-function dropped(evt){
-//drop
-evt.preventDefault();
-evt.stopPropagation();
-//update text in dragged item
-source.innerHTML = evt.target.innerHTML;
-//update text in drop target
- evt.target.innerHTML = evt.dataTransfer.getData("image/jpeg");
-
-}
-</script>
-
+        function dropped(evt) {
+            evt.preventDefault();
+            evt.stopPropagation();
+            source.innerHTML = evt.target.innerHTML;
+            evt.target.innerHTML = evt.dataTransfer.getData("image/jpeg");
+        }
+    </script>
 </head>
 
 <body>
 
+    <ul class="photos columns-3">
 
-<ul class="photos columns-3">
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6001.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6001.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6013.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6013.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6081.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6081.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6268.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6268.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6345.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6345.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6378.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6378.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6397.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6397.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6413.jpg" width="200" height="200"/></li>
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6413.jpg" width="200" height="200" />
+        </li>
 
-<li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><img src="images/dsc_6417.jpg" width="200" height="200"/></li>
-
-
+        <li draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+            <img src="images/dsc_6417.jpg" width="200" height="200" />
+        </li>
 
 
 </body>
+
 </html>
